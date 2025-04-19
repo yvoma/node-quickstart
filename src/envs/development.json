@@ -1,0 +1,6 @@
+{
+    "NODE_ENV": "development",
+    "PORT": 3000,
+    "JOKE_API_URL": "hhttps://official-joke-api.appspot.com/"
+    
+}
