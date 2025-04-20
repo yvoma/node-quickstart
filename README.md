@@ -82,7 +82,6 @@ dans la config jest, on rajoute:
 
 Note: Assurez-vous d'installer la lib ts-jest
 
-
 ### Performance testing using artillery
 
 [artillery](https://www.artillery.io/docs/get-started/first-test)
