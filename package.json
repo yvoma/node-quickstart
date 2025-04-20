@@ -8,8 +8,7 @@
         "dev": "cross-env NODE_ENV=development nodemon --watch src --exec ts-node ./server.ts",
         "lint": "eslint . --ext .ts",
         "format": "prettier --write .",
-        "prepare": "husky",
-        "precommit": "git-format-staged --formatter 'prettier --stdin' '*.ts'"
+        "prepare": "husky"
     },
     "repository": {
         "type": "git",
