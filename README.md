@@ -21,7 +21,7 @@ npm init @eslint/config@latest --save-dev
 npm install eslint-plugin-sonarjs --save-dev
 ```
 
-- prettier
+## prettier
 
 [prettier](https://prettier.io/docs/install)
 
@@ -32,3 +32,14 @@ node --eval "fs.writeFileSync('.prettierrc','{}\n')"
 
 node --eval "fs.writeFileSync('.prettierignore','# Ignore artifacts:\nbuild\ncoverage\n')"
 ```
+
+### pre-commit using husky
+
+```bash
+npx husky init
+npm install --save-dev git-format-staged
+node --eval "fs.writeFileSync('.husky/pre-commit', 'git-format-staged -f \'prettier --ignore-unknown --stdin --stdin-filepath \"{}\"\' .\n')"
+
+```
+
+NOTE: git-format-staged optionnel, si vous avez deja prettier installer, plus besoin
