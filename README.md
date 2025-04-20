@@ -41,4 +41,5 @@ npm install --save-dev git-format-staged
 node --eval "fs.writeFileSync('.husky/pre-commit', 'git-format-staged -f \'prettier --ignore-unknown --stdin --stdin-filepath \"{}\"\' .\n')"
 
 ```
+
 NOTE: git-format-staged optionnel, si vous avez deja prettier installer, plus besoin
