@@ -46,8 +46,6 @@ const config: Config = {
     transform: {
         '^.+\\.tsx?$': 'ts-jest',
     },
-
-   
 };
 
 export default config;
