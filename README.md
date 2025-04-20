@@ -44,16 +44,16 @@ node --eval "fs.writeFileSync('.husky/pre-commit', 'git-format-staged -f \'prett
 
 NOTE: git-format-staged optionnel, si vous avez deja prettier installer, plus besoin
 
-
 ### Initialize testing
 
-- Jest 
+- Jest
 
 [jest](https://jestjs.io/docs/getting-started)
 
 ```bash
 npm init jest@latest
 ```
+
 - typescript test via ts-jest
 
 ```bash
@@ -68,14 +68,14 @@ npm install --save-dev @jest/globals
 
 ### Errors courantes jest
 
-- SyntaxError: Cannot use import statement outside a module : pour fixer le soucis: 
+- SyntaxError: Cannot use import statement outside a module : pour fixer le soucis:
 
 dans la config jest, on rajoute:
 
 ```ts
  testEnvironment: "node",
   preset: 'ts-jest',
-  transform: {  
+  transform: {
     '^.+\\.tsx?$': 'ts-jest',
   },
 ```
