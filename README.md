@@ -81,3 +81,16 @@ dans la config jest, on rajoute:
 ```
 
 Note: Assurez-vous d'installer la lib ts-jest
+
+
+### Performance testing using artillery
+
+[artillery](https://www.artillery.io/docs/get-started/first-test)
+
+- global installation
+
+```bash
+npm install -g artillery@latest
+```
+
+Juste un exemple de test, pour plus de details, regarder dans la docs officiel.
