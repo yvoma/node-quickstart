@@ -1,0 +1,5 @@
+{
+    "NODE_ENV": "test",
+    "PORT": 4000,
+    "JOKE_API_URL": "https://api.example.com/jokes"
+}

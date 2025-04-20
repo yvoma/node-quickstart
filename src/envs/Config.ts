@@ -1,12 +1,14 @@
-import EnvProperties from './src/domain/EnvProperties';
+import EnvProperties from '../domain/EnvProperties';
 import fs from 'fs';
 import path from 'path';
 
 const NODE_BASE_DIR = __dirname;
-const fileName = `/src/envs/${process.env.NODE_ENV}.json`;
+console.log(`NODE_BASE_DIR: ${NODE_BASE_DIR}`);
+const fileName = `/${process.env.NODE_ENV}.json`;
 const filePath = path.join(NODE_BASE_DIR, fileName);
-
+console.log(`filePath: ${filePath}`);
 if (!fs.existsSync(filePath)) {
+    console.log(`File does not exist: ${filePath}`);
     throw new Error(`Environment file not found: ${filePath}`);
 }
 const fileContent = fs.readFileSync(filePath, 'utf-8');
