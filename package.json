@@ -30,7 +30,6 @@
         "dotenv": "^16.5.0",
         "eslint": "^9.25.0",
         "eslint-plugin-sonarjs": "^3.0.2",
-        "git-format-staged": "^3.1.1",
         "globals": "^16.0.0",
         "jest": "^29.7.0",
         "nodemon": "^3.1.9",
