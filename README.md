@@ -12,3 +12,23 @@
 npm init @eslint/config@latest --save-dev
 
 ```
+
+- eslint sonarjs
+
+[eslint-sonarjs](https://www.npmjs.com/package/eslint-plugin-sonarjs)
+
+```bash
+npm install eslint-plugin-sonarjs --save-dev
+```
+
+- prettier
+
+[prettier](https://prettier.io/docs/install)
+
+```bash
+npm install --save-dev --save-exact prettier
+
+node --eval "fs.writeFileSync('.prettierrc','{}\n')"
+
+node --eval "fs.writeFileSync('.prettierignore','# Ignore artifacts:\nbuild\ncoverage\n')"
+```

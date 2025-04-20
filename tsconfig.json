@@ -2,9 +2,9 @@
     "include": ["src/**/*"],
     "exclude": ["**/*.spec.ts"],
 
-    "compilerOptions":{
+    "compilerOptions": {
         "target": "ESNext",
-        "module" : "CommonJS",
+        "module": "CommonJS",
         "strict": true,
         "noImplicitAny": true,
         "outDir": "./build",
@@ -22,6 +22,6 @@
         "isolatedModules": true,
         "noEmit": true,
         "sourceMap": true,
-        "declaration": true,
+        "declaration": true
     }
 }
