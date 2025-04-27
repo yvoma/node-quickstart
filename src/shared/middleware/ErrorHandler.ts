@@ -11,9 +11,9 @@ export class QuickstartError extends Error {
 
 export const errorHandler = (
     err: QuickstartError,
-    req: Request,
+    _req: Request,
     res: Response,
-    next: NextFunction
+    _next: NextFunction
 ) => {
     res.status(err.statusCode || 500).json({
         error: {

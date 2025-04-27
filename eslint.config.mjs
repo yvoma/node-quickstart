@@ -1,7 +1,7 @@
 import js from '@eslint/js';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
-import { defineConfig } from 'eslint/config';
+import { defineConfig, globalIgnores } from 'eslint/config';
 import sonarjs from 'eslint-plugin-sonarjs';
 
 export default defineConfig([
@@ -10,6 +10,7 @@ export default defineConfig([
         plugins: { js },
         extends: ['js/recommended'],
     },
+    globalIgnores(['coverage/*']),
     {
         files: ['**/*.{js,mjs,cjs,ts}'],
         languageOptions: { globals: globals.browser },
