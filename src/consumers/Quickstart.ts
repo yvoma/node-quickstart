@@ -1,5 +1,6 @@
 import express, { Application, Router, Request, Response } from 'express';
 import EnvProperties from '@/domain/EnvProperties';
+import { errorHandler } from '@/shared/middleware/ErrorHandler';
 export default class Quickstart {
     private instance: Application;
     private router: Router;
@@ -14,6 +15,7 @@ export default class Quickstart {
     }
 
     private initializeRoutes() {
+        this.instance.use(errorHandler);
         this.router.get('/quickstart', this.handleQuickstart);
         this.instance.use('/api', this.router);
     }
